@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang=en>
+<head>
+  
+  
+<meta charset=utf-8>
+<title>Weekly Technical Commentary</title>
+</head>
+  <style>
+        /* Basic styling */
+        .slider {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        /* Popup styling */
+        .popup {
+            display: none;
+            position: fixed;
+            right: 0;
+            bottom: 60px;
+            border: 1px solid #ddd;
+            background-color: white;
+            padding: 10px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            cursor: pointer;
+        }
+    </style>
+    
+<style>
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+</style>
+<body>
+  
+
+
+<video controls autoplay>
+   <source src="weeklycomments.mp4" type="video/mp4">
+   
+</video>
+<button class="slider" onclick="togglePopup()">Signup</button>
+    <div class="popup" id="popup" onclick="openPage()">Click here to Signup</div>
+
+    <script>
+        function togglePopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = popup.style.display === "block" ? "none" : "block";
+        }
+
+        function openPage() {
+            window.open('https://share.hsforms.com/18UGL7arwTVOLzc3pBgak0Ad5xe8', '_blank');
+        }
+    </script>
+
+
+</body>
+</html>
